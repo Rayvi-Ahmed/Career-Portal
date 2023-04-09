@@ -16,7 +16,12 @@ const Header = () => {
                             <li><Link to={'/blog'}>Blog</Link></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">Career Portal</a>
+                    <Link
+                        to='/'
+                        className='px-8 py-3 font-semibold rounded'
+                    >
+                        Career Portal
+                    </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
