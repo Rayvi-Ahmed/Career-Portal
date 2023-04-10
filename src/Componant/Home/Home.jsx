@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import image from '../../Images/Header-img.png'
 import Category from '../Category/Category';
-import { useLoaderData } from 'react-router-dom';
+import { json, useLoaderData } from 'react-router-dom';
 import Job from '../Job/Job';
-
+import JobDetails from '../JobDetails/JobDetails';
 
 const Home = () => {
     const [categorys, setcatagory] = useState([])
     const jobs = useLoaderData()
+
 
     useEffect(() => {
         fetch('Category.json')
@@ -63,7 +64,6 @@ const Home = () => {
                 }
 
             </div>
-
 
         </div>
 
