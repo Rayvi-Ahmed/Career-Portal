@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import image from '../../Images/Header-img.png'
 import Category from '../Category/Category';
+import { useLoaderData } from 'react-router-dom';
+import Job from '../Job/Job';
 
 
 const Home = () => {
     const [categorys, setcatagory] = useState([])
+    const jobs = useLoaderData()
 
     useEffect(() => {
         fetch('Category.json')
@@ -25,14 +28,16 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* job category */}
+            {/* job category title */}
 
             <div className="job-category text-center mb-5">
                 <h1 className='font-bold text-4xl my-5'>Job Category</h1>
-                <p className='font-bold text-md'>We provide many of job category based your skill, you can find your job category as below</p>
+                <p className='font-semibold text-slate-400'>We provide many of job category based your skill, you can find your job category as below</p>
 
             </div>
-            <div className=" container mx-auto job-Catagory my-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            {/* Job category Card portion */}
+            <div className="mb-8 container mx-auto job-Catagory my-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
                 {
                     categorys.map(category => <Category
                         key={category.id}
@@ -40,6 +45,25 @@ const Home = () => {
                     ></Category>)
                 }
             </div>
+
+            {/* job feateured title */}
+            <div className="job-category text-center space-y-10 ">
+                <h1 className='font-bold text-4xl'>Job Featured</h1>
+                <p className='font-semibold text-slate-400'>We provide many of job category based your skill, you can find your job category as below</p>
+
+            </div>
+
+            {/* Job featured card show here! */}
+            <div className='container mx-auto grid grid-cols md:grid-cols-2 lg:grid-cols-2 gap-8 mb-8 my-8'>
+                {
+                    jobs.map(job => <Job
+                        key={job.id}
+                        job={job}
+                    ></Job>)
+                }
+
+            </div>
+
 
         </div>
 
