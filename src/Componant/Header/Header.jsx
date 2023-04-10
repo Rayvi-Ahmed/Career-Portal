@@ -18,7 +18,7 @@ const Header = () => {
                     </div>
                     <Link
                         to='/'
-                        className='px-8 py-3 font-semibold rounded'
+                        className='px-8 py-3 font-bold rounded text-3xl'
                     >
                         Career Portal
                     </Link>
@@ -32,7 +32,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Start Applying</a>
+                    <a className="btn btn-primary">Start Applying</a>
                 </div>
             </div>
         </div>

@@ -1,0 +1,26 @@
+[
+    {
+        "_id": "64337f17656b29fb670ddeeb",
+        "available_jobs": 2000,
+        "picture": "https://icon2.cleanpng.com/20180401/keq/kisspng-accounting-software-certified-public-accountant-fi-accounting-5ac0bb69bd2aa9.1553865815225803297748.jpg",
+        "title": "Account & Finance"
+    },
+    {
+        "_id": "64337f172d89eb01320d683a",
+        "available_jobs": 5000,
+        "picture": "https://cdn1.iconfinder.com/data/icons/seo-9/500/SEO3-49-1024.png",
+        "title": "Creative Design"
+    },
+    {
+        "_id": "64337f1763c1e184255431a8",
+        "available_jobs": 500,
+        "picture": "https://www.autoserviceworld.com/wp-content/uploads/2019/05/118-1186822_office-management-png-transparent-images-sales-and-marketing-icon-png.png.jpeg",
+        "title": "Marketing & Sales"
+    },
+    {
+        "_id": "64337f17e9acb50c7be59e28",
+        "available_jobs": 2500,
+        "picture": "https://e7.pngegg.com/pngimages/276/76/png-clipart-production-engineering-manufacturing-engineering-mechanical-engineering-others-engineering-industry.png",
+        "title": "Engineering Job"
+    }
+]
