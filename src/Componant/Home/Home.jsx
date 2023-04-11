@@ -7,6 +7,10 @@ import JobDetails from '../JobDetails/JobDetails';
 
 const Home = () => {
     const [categorys, setcatagory] = useState([])
+    const [showAll, setShowAll] = useState(false)
+    const handleShowAll = () => {
+        setShowAll(true)
+    }
     const jobs = useLoaderData()
 
     useEffect(() => {
@@ -56,7 +60,7 @@ const Home = () => {
             {/* Job featured card show here! */}
             <div className='container mx-auto grid grid-cols md:grid-cols-2 lg:grid-cols-2 gap-8 mb-8 my-8'>
                 {
-                    jobs.map(job => <Job
+                    jobs.slice(0, showAll ? 6 : 4).map(job => <Job
                         key={job.id}
                         job={job}
                     ></Job>)
@@ -64,6 +68,13 @@ const Home = () => {
 
             </div>
 
+            {
+                !showAll &&
+                <div className='flex items-center justify-center'>
+                    <button onClick={handleShowAll} className="btn btn-outline btn-primary">See More</button>
+                </div>
+
+            }
         </div>
 
 

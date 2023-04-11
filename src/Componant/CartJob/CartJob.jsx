@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const CartJob = ({ job }) => {
@@ -25,7 +26,7 @@ const CartJob = ({ job }) => {
                     </div>
 
                     <div>
-                        <button className="btn btn-outline btn-info">View details</button>
+                        <Link to={`/detail/${_id}`}><button className="btn btn-outline btn-info">View details</button></Link>
                     </div>
                 </div>
             </div>
