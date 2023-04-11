@@ -9,7 +9,6 @@ const Home = () => {
     const [categorys, setcatagory] = useState([])
     const jobs = useLoaderData()
 
-
     useEffect(() => {
         fetch('Category.json')
             .then(res => res.json())

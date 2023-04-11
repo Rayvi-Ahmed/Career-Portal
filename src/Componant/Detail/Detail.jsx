@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Detail = ({ detail }) => {
-    const { job_type, address, company, salary, title, email, phone, description, responsibility, requirements, Experiences } = detail
+const Detail = ({ detail, handleApplyJob }) => {
+    const { job_type, address, company, salary, title, email, phone, description, responsibility, requirements, Experiences, _id } = detail
     return (
         <div className='my-2 flex justify-between items-center gap-5'>
             <div className="detail-container bg-base-200 p-8">
@@ -27,7 +27,7 @@ const Detail = ({ detail }) => {
                         <h1 className=''><span className='font-bold text-l'> Email : </span>{email} </h1>
                         <h1 className=''><span className='font-bold text-l'> Address : </span>{address} </h1>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary w-full">Apply Now</button>
+                            <button onClick={() => handleApplyJob(_id)} className="btn btn-primary w-full">Apply Now</button>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import Detail from '../Detail/Detail';
+import { addToDb } from '../FakeDb';
 
 const JobDetails = () => {
     const [details, setdetail] = useState({})
@@ -16,6 +17,11 @@ const JobDetails = () => {
 
     }, [id])
     console.log(details)
+
+    const handleApplyJob = id => {
+        console.log(id)
+        addToDb(id)
+    }
     return (
         <div>
             <div className="hero bg-base-300">
@@ -31,6 +37,7 @@ const JobDetails = () => {
                     <Detail
                         key={details._id}
                         detail={details}
+                        handleApplyJob={handleApplyJob}
                     ></Detail>
                 }
             </div>
