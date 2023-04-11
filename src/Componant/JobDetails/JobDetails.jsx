@@ -16,7 +16,6 @@ const JobDetails = () => {
         }
 
     }, [id])
-    console.log(details)
 
     const handleApplyJob = id => {
         console.log(id)

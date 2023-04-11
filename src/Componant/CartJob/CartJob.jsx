@@ -25,11 +25,9 @@ const CartJob = ({ job }) => {
                     </div>
 
                     <div>
-                        <button className='btn btn-primary '>viwe details</button>
+                        <button className="btn btn-outline btn-info">View details</button>
                     </div>
                 </div>
-
-
             </div>
 
         </div>
