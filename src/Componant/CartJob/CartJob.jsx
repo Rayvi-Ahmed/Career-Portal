@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const CartJob = ({ job }) => {
     const { company, picture, salary, mode, job_type, address, _id, title } = job
+
     return (
         <div>
             <div className="card card-side bg-base-200 p-3">
@@ -26,7 +27,7 @@ const CartJob = ({ job }) => {
                     </div>
 
                     <div>
-                        <Link to={`/detail/${_id}`}><button className="btn btn-outline btn-info">View details</button></Link>
+                        <Link to={`/detail/${_id}`}><button className="btn btn-outline btn-primary">View details</button></Link>
                     </div>
                 </div>
             </div>

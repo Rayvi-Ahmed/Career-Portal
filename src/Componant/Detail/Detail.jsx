@@ -3,7 +3,7 @@ import React from 'react';
 const Detail = ({ detail, handleApplyJob }) => {
     const { job_type, address, company, salary, title, email, phone, description, responsibility, requirements, Experiences, _id } = detail
     return (
-        <div className='my-2 flex justify-between items-center gap-5'>
+        <div className='my-2 grid grid-cols-1 lg:grid-cols-2 gap-5'>
             <div className="detail-container bg-base-200 p-8">
                 <h1 className='mb-3'><span className='font-bold text-l'>Job Description: </span>{description} </h1>
                 <h1 className='mb-2'><span className='font-bold text-l'>Job Resposibility: </span>{responsibility} </h1>

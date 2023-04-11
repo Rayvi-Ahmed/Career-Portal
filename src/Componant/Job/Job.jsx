@@ -12,7 +12,7 @@ const Job = ({ job }) => {
                 <div className='space-y-3 text-start'>
                     <h1 className='font-bold text-2xl
                     '>{title}</h1>
-                    <h6 className='font-bold text-xl text-slate-500'>{company}</h6>
+                    <h6 className='font-bold text-l text-slate-500'>{company}</h6>
 
                     <div className='flex items-start justify-start gap-4'>
                         <button className="btn btn-outline btn-primary">{mode}</button>
