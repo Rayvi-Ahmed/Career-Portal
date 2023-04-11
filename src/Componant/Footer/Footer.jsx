@@ -1,22 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <div>
             <footer className="footer p-10  bg-gray-800 my-3  text-white">
                 <div>
-                    <span className="footer-title">Services</span>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
+                    <span className="footer-title">Job categories</span>
                     <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+                    <a className="link link-hover">Design</a>
+                    <a className="link link-hover">Finance</a>
+                    <a className="link link-hover">Enginering </a>
                 </div>
                 <div>
-                    <span className="footer-title">Company</span>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
+                    <Link to={'/'} className="footer-title">Explore site</Link>
+                    <Link to={'/statistics'} className="link link-hover">Statistics</Link>
+                    <Link to={'/applied job'} className="link link-hover">Applied job</Link>
+                    <Link to={'/blog'} className="link link-hover">Blog</Link>
+
+
                 </div>
                 <div>
                     <span className="footer-title">Social</span>
