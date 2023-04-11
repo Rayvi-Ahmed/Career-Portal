@@ -32,7 +32,7 @@ const AppliedJob = () => {
             {/* page header */}
             <div className="hero bg-base-300">
                 <div className="hero-content text-center">
-                    <div className="max-w-md h-80">
+                    <div className="max-w-md h-60">
                         <h1 className="text-3xl font-bold">Job Applied</h1>
                     </div>
                 </div>

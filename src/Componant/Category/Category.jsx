@@ -5,7 +5,7 @@ const Category = ({ category }) => {
 
     return (
         <div>
-            <div className="after:card card-compact bg-base-200 shadow-xl hover:bg-base-300">
+            <div className="after:card card-compact bg-base-200 shadow-md hover:bg-base-300">
                 <figure><img src={picture} className='w-20 h-24' alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{title}</h2>

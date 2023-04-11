@@ -21,12 +21,12 @@ const Home = () => {
     }, [])
     return (
         <div className='bg-base-100'>
-            <div className="hero min-h-screen bg-base-200">
-                <div className="hero-content flex-col lg:flex-row-reverse w-10/12 mx-auto">
-                    <img src={image} className="max-w-lg " />
+            <div className="hero min-h-60 bg-base-200">
+                <div className="hero-content flex-col lg:flex-row-reverse w-9/12 mx-auto">
+                    <img src={image} className="max-w-xl " />
                     <div className='text-start'>
-                        <h1 className="text-5xl font-bold">Call your Career to take your dream job</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <h1 className="text-5xl font-bold"><span className='text-blue-700 '>Call</span> your Career to take your <span className='text-violet-700'>dream job</span></h1>
+                        <p className="py-6 font-semibold">Find your job at 2023. We have provided many of job news at daily basis update.Working wih 40+ reputed company to get hierd based on your skill or internship opeertunity.</p>
                         <button className="btn btn-primary">Get Started</button>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ const Home = () => {
             </div>
 
             {/* Job category Card portion */}
-            <div className="mb-8 container mx-auto job-Catagory my-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+            <div className="container mx-auto job-Catagory my-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
                 {
                     categorys.map(category => <Category
                         key={category.id}
@@ -51,7 +51,7 @@ const Home = () => {
             </div>
 
             {/* job feateured title */}
-            <div className="job-category text-center space-y-10 ">
+            <div className="space-y-56 job-category text-center">
                 <h1 className='font-bold text-4xl'>Job Featured</h1>
                 <p className='font-semibold text-slate-400'>We provide many of job category based your skill, you can find your job category as below</p>
 
