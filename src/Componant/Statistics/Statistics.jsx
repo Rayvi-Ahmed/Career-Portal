@@ -84,7 +84,7 @@ export default function App() {
                     <Tooltip />
                     <Legend />
                     <Area type="monotone" dataKey="possibleMark" fill="#8884d8" stroke="#8884d8" />
-                    <Bar dataKey="marks" barSize={20} fill="#413ea0" />
+                    <Bar dataKey="marks" barSize={40} fill="#413ea0" />
                     <Line type="monotone" dataKey="marks" stroke="#ff7300" />
                 </ComposedChart>
             </ResponsiveContainer>

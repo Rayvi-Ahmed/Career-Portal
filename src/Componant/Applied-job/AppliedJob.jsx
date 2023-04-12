@@ -43,10 +43,10 @@ const AppliedJob = () => {
 
             <div className='my-6 flex justify-center items-center gap-4'>
 
-                <button onClick={() => handleFilter('remote')} className="btn btn-outline btn-primary">Remote option</button>
+                <button onClick={() => handleFilter('remote')} className="btn  btn-primary">Remote option</button>
 
 
-                <button onClick={() => handleFilter('On-site')} className="btn btn-outline btn-primary">Onsite option</button>
+                <button onClick={() => handleFilter('On-site')} className="btn btn-secendery">Onsite option</button>
             </div>
 
 
