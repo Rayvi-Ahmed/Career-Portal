@@ -8,8 +8,9 @@ const CartJob = ({ job }) => {
     return (
         <div>
             <div className="card card-side bg-base-200 p-3">
-                <img src={picture} className='w-40 h-30 ' alt="" />
-                <div className='flex justify-center items-center gap-8'>
+
+                <div className='flex justify-between items-center gap-8'>
+                    <img src={picture} className='w-40 h-30 ' alt="" />
                     <div className='ml-5 p-5 text-start flex flex-col items-start'>
                         <h1 className='font-bold text-2xl '>{title}</h1>
                         <h1 className='font-semibold text-xl text-gray-800 mb-2'>{company}</h1>

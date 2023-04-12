@@ -17,7 +17,7 @@ const AppliedJob = () => {
 
         if (filter === "remote") {
             filteredJobs = jobs.filter((job) => job.remote === true);
-        } else if (filter === "On-site") {
+        } else if (filter === "onsite") {
             filteredJobs = jobs.filter((job) => job.remote === false);
         }
 

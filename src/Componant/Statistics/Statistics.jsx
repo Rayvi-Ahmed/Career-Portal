@@ -1,6 +1,6 @@
-
 import React from "react";
 import {
+    ResponsiveContainer,
     ComposedChart,
     Line,
     Area,
@@ -9,87 +9,85 @@ import {
     YAxis,
     CartesianGrid,
     Tooltip,
-    Legend,
-    Scatter
+    Legend
 } from "recharts";
 
 const data = [
     {
-        name: "Assignment 01",
+        name: "A-01",
         marks: 60,
-        possible: 60,
-        topic: "Lending Page"
+        possibleMark: 60,
+        amt: 1400
     },
     {
-        name: "Assignment 02",
+        name: "A-02",
         marks: 60,
-        topic: "responsive CSS",
-        possible: 60
+        possibleMark: 60,
+        amt: 1506
     },
     {
-        name: "Assignment 03",
+        name: "A-03",
         marks: 60,
-        topic: "CSS framework",
-        possible: 60
+        possibleMark: 60,
+        amt: 989
     },
     {
-        name: "Assignment 04",
+        name: "A-04",
         marks: 52,
-        topic: "Basic JS",
-        possible: 60
+        possibleMark: 60,
+        amt: 1228
     },
     {
-        name: "Assignment 05",
+        name: "A-05",
         marks: 47,
-        topic: "Interact JS",
-        possible: 60
+        possibleMark: 60,
+        amt: 1100
     },
     {
-        name: "Assignment 06",
+        name: "A-06",
         marks: 54,
-        topic: "JS API",
-        possible: 60
+        possibleMark: 60,
+        amt: 1700
     },
     {
-        name: "Assignment 07",
+        name: "A-07",
         marks: 60,
-        topic: "Debuging",
-        possible: 60
+        possibleMark: 60,
+        amt: 1700
     },
     {
-        name: "Assignment 08",
+        name: "A-08",
         marks: 60,
-        topic: "Simple React",
-        possible: 60
+        possibleMark: 60,
+        amt: 1700
     }
 ];
 
 export default function App() {
     return (
-        <ComposedChart
-            width={800}
-            height={400}
-            data={data}
-            margin={{
-                top: 20,
-                right: 20,
-                bottom: 20,
-                left: 20
-            }}
-        >
-            <CartesianGrid stroke="#f5f5f5" />
-            <XAxis dataKey="name" />
-            <YAxis dataKey="possible" />
-            <Tooltip />
-            <Legend />
-            <Area
-                type="monotone"
-                dataKey="possible"
-                fill="#8884d8"
-                stroke="#8884d8"
-            />
-            <Bar dataKey="possible" barSize={30} fill="#413ea0" />
-            <Line type="monotone" dataKey="marks" stroke="#ff7300" />
-        </ComposedChart>
+        <div style={{ width: "100%", height: 300 }}>
+            <ResponsiveContainer>
+                <ComposedChart
+                    width={800}
+                    height={400}
+                    data={data}
+                    margin={{
+                        top: 20,
+                        right: 20,
+                        bottom: 20,
+                        left: 20
+                    }}
+                >
+                    <CartesianGrid stroke="#f5f5f5" />
+                    <XAxis dataKey="name" scale="band" />
+                    <YAxis dataKey="possibleMark" />
+                    <Tooltip />
+                    <Legend />
+                    <Area type="monotone" dataKey="possibleMark" fill="#8884d8" stroke="#8884d8" />
+                    <Bar dataKey="marks" barSize={20} fill="#413ea0" />
+                    <Line type="monotone" dataKey="marks" stroke="#ff7300" />
+                </ComposedChart>
+            </ResponsiveContainer>
+        </div>
     );
 }
